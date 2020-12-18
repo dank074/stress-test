@@ -1,1 +1,3 @@
-console.log("yoooooo")
+import App from "./App";
+
+new App();
