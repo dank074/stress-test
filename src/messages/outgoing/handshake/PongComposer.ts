@@ -1,4 +1,5 @@
 import MessageComposer from "../MessageComposer";
+import Outgoing from "../Outgoing";
 import OutgoingMessage from "../OutgoingMessage";
 
 export default class PongComposer extends MessageComposer {
@@ -6,6 +7,6 @@ export default class PongComposer extends MessageComposer {
     //nothing, empty message
   }
   getHeader(): number {
-    throw new Error("Method not implemented.");
+    return Outgoing.PongComposer;
   }
 }
