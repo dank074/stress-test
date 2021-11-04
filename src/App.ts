@@ -7,7 +7,7 @@ export default class App {
 
   constructor() {
     App._instance = this;
-    this._connection = new WebSocketConnection("ws://localhost:2097/", new PacketManager());
+    this._connection = new WebSocketConnection("ws://localhost:2097/");
   }
 
   public get connection(): WebSocketConnection {
